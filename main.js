@@ -17,12 +17,19 @@ let insertX = [
 let insertY = [
     "the soup kitchen",
     "Disneyland",
-    " the White House"];
+    "the White House"];
 
 let insertZ = [
     "spontaneously combusted",
     "melted into a puddle on the sidewalk",
     "turned into a slug and crawled away"];
+
+
+
+let newStory = storyText;
+let xItem = randomValueFromArray();
+let yItem = randomValueFromArray();
+let zItem = randomValueFromArray();
 
 
 
