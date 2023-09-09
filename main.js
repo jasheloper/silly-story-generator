@@ -102,7 +102,7 @@ Look up the formulas for converting pounds to stone, and Fahrenheit to centigrad
 
         Concatenate ' centigrade' onto the end of the result of the overall Math.round() call.
         */
-    const temperature =  Math.round(94);
+    const temperature =  Math.round((94 - 32) * (5/9));
 
 
         /*
