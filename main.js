@@ -79,7 +79,6 @@ If so, we want to convert the weight and temperature values in the story from po
 */
 
 
-
 /*
 Look up the formulas for converting pounds to stone, and Fahrenheit to centigrade.
 */
@@ -110,7 +109,17 @@ Look up the formulas for converting pounds to stone, and Fahrenheit to centigrad
         */
   }
 
-  story.textContent = ;
+  /*
+  
+  Finally, in the second-to-last line of the function, 
+  
+  make the textContent property of the story variable (which references the paragraph) 
+  
+  equal to newStory.
+  
+  */
+
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
 
