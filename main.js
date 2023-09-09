@@ -85,18 +85,26 @@ Look up the formulas for converting pounds to stone, and Fahrenheit to centigrad
 */
 
   if(document.getElementById("uk").checked) {
+
         /*
         Inside the line that defines the weight variable, replace 300 with a calculation that converts 300 pounds into stones.
 
         Concatenate ' stone' onto the end of the result of the overall Math.round() call.
         */
-    const weight = Math.round(300);
+
+    const weight = Math.round((300 / 14)) + "stone";
+
+
         /*
         Inside the line that defines the temperature variable, replace 94 with a calculation that converts 94 Fahrenheit into centigrade. 
+
+        (94°F − 32) × 5/9 = 34.444°C
 
         Concatenate ' centigrade' onto the end of the result of the overall Math.round() call.
         */
     const temperature =  Math.round(94);
+
+
         /*
         Just under the two variable definitions, add two more string replacement lines that replace '94 fahrenheit' with the contents of the temperature variable, and '300 pounds' with the contents of the weight variable.
         */
