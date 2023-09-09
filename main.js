@@ -125,3 +125,7 @@ So each time the button is pressed, these placeholders are each replaced with a 
 As a further hint, depending on the method you choose, you might need to make one of the calls twice.
 
 */
+
+newStory.replace(":insertx:", xItem);
+newStory.replace(":inserty:", yItem);
+newStory.replaceAll(":insertz:", zItem);
