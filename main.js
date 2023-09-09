@@ -60,7 +60,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-
+    newStory.replace("Bob", name);
   }
 
   if(document.getElementById("uk").checked) {
