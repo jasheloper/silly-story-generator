@@ -30,6 +30,18 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+  // so we can create a new random story each time the button is pressed and the function is run. 
+  // If we made changes directly to storyText, we'd only be able to generate a new story once.
+  
+  let newStory = storyText;
+
+  // each case will be a random item out of each array it is called on).
+  // i.e. return a random string out of insertX by writing randomValueFromArray(insertX)
+  
+  let xItem = randomValueFromArray(insertX);
+  let yItem = randomValueFromArray(insertY);
+  let zItem = randomValueFromArray(insertZ);
+
   if(customName.value !== '') {
     const name = customName.value;
 
