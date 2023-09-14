@@ -1,3 +1,9 @@
+## View Live Demo
+https://jasheloper.github.io/silly-story-generator/
+
+<br>
+
+
 ## Objective
 To test comprehension of JavaScript fundamentals, such as variables, numbers, operators, strings, and arrays.
 
