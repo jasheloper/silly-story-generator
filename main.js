@@ -35,12 +35,25 @@ function result() {
   
   let newStory = storyText;
 
-  // each case will be a random item out of each array it is called on).
+
+    // each case will be a random item out of each array it is called on).
   // i.e. return a random string out of insertX by writing randomValueFromArray(insertX)
-  
+
   let xItem = randomValueFromArray(insertX);
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
+
+
+
+  // we want to replace the three placeholders in the newStory string — :insertx:, :inserty:, and :insertz: — with the strings stored in xItem, yItem, and zItem. 
+
+  // in each case, make the call to the method equal to newStory, so each time it is called, newStory is made equal to itself, but with substitutions made. 
+
+newStory.replaceAll(":insertx:", xItem)
+        .replace(":inserty:", yItem)
+        .replace(":insertz:", zItem)
+
+
 
   if(customName.value !== '') {
     const name = customName.value;
