@@ -51,19 +51,32 @@ function result() {
 
 newStory.replaceAll(":insertx:", xItem)
         .replace(":inserty:", yItem)
-        .replace(":insertz:", zItem)
+        .replace(":insertz:", zItem);
 
 
 
   if(customName.value !== '') {
     const name = customName.value;
-
+    // add another string replacement method call to replace the name 'Bob' found in the newStory string with the name variable. 
+    newStory.replace("Bob", name);
   }
 
-  if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+  // we are checking to see if the uk radio button has been selected.
+  // If so, we want to convert the weight and temperature values in the story from pounds and Fahrenheit into stones and centigrade.
 
+  if(document.getElementById("uk").checked) {
+
+    // replace 300 with a calculation that converts 300 pounds into stones.
+    // Concatenate ' stone' onto the end of the result of the overall Math.round() call.
+    const weight = `${Math.round((300 / 14))} stone`;
+
+    // replace 94 with a calculation that converts 94 Fahrenheit into centigrade.
+    // Concatenate ' centigrade' onto the end of the result of the overall Math.round() call.
+    const temperature =  `${Math.round((94 - 32) * (5 / 9))} centigrade`;
+
+    // add two more string replacement lines that replace '94 fahrenheit' with the contents of the temperature variable, and '300 pounds' with the contents of the weight variable.
+    newStory.replace("300 pounds", weight)
+            .replace("94 fahrenheit", temperature);
   }
 
   story.textContent = ;

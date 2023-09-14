@@ -34,8 +34,18 @@ function randomValueFromArray(array){
 //   ${zItem}
 // `)
 
-console.log(
-    newStory.replaceAll(":insertx:", xItem)
-        .replace(":inserty:", yItem)
-        .replace(":insertz:", zItem)
-)
+// console.log(
+//     newStory.replaceAll(":insertx:", xItem)
+//         .replace(":inserty:", yItem)
+//         .replace(":insertz:", zItem)
+// )
+
+
+const weight = `${Math.round((300 / 14))} stone`;
+const temperature =  `${Math.round((94 - 32) * (5 / 9))} centigrade`;
+
+console.log(newStory.replace("300 pounds", weight)
+.replace("94 fahrenheit", temperature))
+
+
+
