@@ -26,12 +26,12 @@ function result() {
       .replace(":inserty:", yItem)
       .replace(":insertz:", zItem);
 
-  if(customName.value !== '') {
+  if (customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace("Bob", name);
   }
 
-  if(document.getElementById("uk").checked) {
+  if (document.getElementById("uk").checked) {
     const weight = `${Math.round(300 / 14)} stone`;
     const temperature =  `${Math.round((94 - 32) * (5 / 9))} centigrade`;
     newStory = newStory
